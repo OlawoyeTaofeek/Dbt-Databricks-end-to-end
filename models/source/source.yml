@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: source
+    database: dbt-and-databricks
+    schema: source
+    tables:
+      - name: fact_sales
+        description: "Sales fact table"
+      - name: fact_returns
+        description: "Returns fact table"
+      - name: dim_product
+        description: "Product dimension"
+      - name: dim_customer
+        description: "Customer dimension"
+      - name: dim_store
+        description: "Store dimension"
+      - name: dim_date
+        description: "Date dimension"
