@@ -26,7 +26,6 @@ models:
               config:
                 severity: error 
 
-
   - name: bronze_sale
     config:
       materialized: view
@@ -41,3 +40,16 @@ models:
           - relationships:
               to: ref('bronze_store')
               field: store_sk
+
+  - name: bronze_date
+    config:
+      materialized: view
+    columns: 
+      - name: date_sk
+        tests:
+          - unique
+          - not_null
+      - name: date
+        tests:
+          - dbt_expectations.expect_column_values_to_be_in_type_list:
+              column_type_list: ['date', 'datetime']
