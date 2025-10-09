@@ -1,6 +1,11 @@
 version: 2
 
 models:
+
+  - name: my_python_model
+    config:
+      materialized: table
+
   - name: bronze_returns
     config:
       materialized: view
@@ -40,6 +45,16 @@ models:
           - relationships:
               to: ref('bronze_store')
               field: store_sk
+
+      - name: gross_amount
+        tests:
+          - generate_non_negative:
+              column_name: gross_amount
+
+      - name: net_amount
+        tests:
+          - generate_non_negative:
+              column_name: net_amount
 
   - name: bronze_date
     config:
