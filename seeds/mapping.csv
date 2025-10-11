@@ -1,5 +1,5 @@
-customerid,csutomerName
-1,Olawoye Taofeek
-2,Samuel Ayinde
-3,John Owoade
-4,Razaq Adegbite
+customerid,csutomerName,customermail
+1,Olawoye Taofeek,olawoyetaofeek@gmail.com
+2,Samuel Ayinde,samuel.freeman.miller@altostrat.com
+3,John Owoade,johnowoade@gmail.com
+4,Razaq Adegbite,razaqadegbite@gmail.com

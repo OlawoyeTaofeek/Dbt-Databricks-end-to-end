@@ -1,0 +1,15 @@
+version: 2
+
+seeds:
+  - name: mapping
+    description: a manual seed created for testing
+    columns: 
+      - name: customerid
+        tests:
+           - unique
+           - not_null
+
+      - name: customeremail
+        tests:
+           - unique
+           - not_null
