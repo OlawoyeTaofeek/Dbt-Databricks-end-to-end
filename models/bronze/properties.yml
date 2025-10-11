@@ -2,10 +2,6 @@ version: 2
 
 models:
 
-  - name: my_python_model
-    config:
-      materialized: table
-
   - name: bronze_returns
     config:
       materialized: view
@@ -55,6 +51,7 @@ models:
         tests:
           - generate_non_negative:
               column_name: net_amount
+
 
   - name: bronze_date
     config:

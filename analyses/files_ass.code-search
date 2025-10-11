@@ -1,0 +1,14 @@
+# Query: files.ass
+# ContextLines: 1
+
+2 results - 1 file
+
+\defaultSettings.json:
+   3166  	// Configure [glob patterns](https://aka.ms/vscode-glob-patterns) of file associations to languages (for example `"*.extension": "html"`). Patterns will match on the absolute path of a file if they contain a path separator and will match on the name of the file otherwise. These have precedence over the default associations of the languages installed.
+   3167: 	"files.associations": {
+   3168  		"*.dbclient-js": "javascript",
+                 "*csv": "plaintext"
+
+  17456  	// Set custom file icon associations.
+  17457: 	"material-icon-theme.files.associations": {},
+  17458  
